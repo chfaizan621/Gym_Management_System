@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gym Management System</title>
+	<style>
+		.container {
+			text-align: center;
+			margin-top: 50px;
+		}
+		.container1 {
+			text-align: center;
+			margin-top: 30px;
+		}
+		body {
+			background-color: #D3D3D3;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			color: #000000;
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		h2 {
+			color: #000000;
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		form {
+			max-width: 400px;
+			margin: 0 auto;
+		}
+		label {
+			display: block;
+			font-size: 16px;
+			font-weight: bold;
+			margin-bottom: 5px;
+			color: #000000;
+		}
+		input[type="text"],
+		input[type="number"],
+		select {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			margin-bottom: 5px;
+			font-size: 16px;
+		}
+		select {
+			height: 40px;
+		}
+		input[type="submit"] {
+			background-color: #555;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #333;
+		}
+		.gym-logo {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			max-width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Gym Management System</h1>
+		<img src="gym-image.png" alt="Gym Logo" class="gym-logo">
+	</div>
+	<div class="container1">
+		<h2>Update Equipment</h2><br>
+		<form action="upd_equip.php" method="post">
+		<label for="equipment_id">Equipment ID</label>
+		<input type="text" id="equipment_id" name="equipment_id" required><br><br>
+		
+		<label for="ename">Name</label>
+		<input type="text" id="ename" name="ename" required><br><br>
+		
+		<label for="description">Description</label>
+		<input type="text" id="description" name="description" required><br><br>
+		
+		<label for="quantity">Quantity</label>
+		<input type="number" id="quantity" name="quantity" required><br><br>
+		
+		<label for="equiptmentCondition">Equipment Condition</label>
+		<select id="equiptmentCondition" name="equiptmentCondition">
+			<option value="Good">Good</option>
+			<option value="Fair">Fair</option>
+			<option value="Poor">Poor</option>
+		</select><br><br>
+		
+		<input type="submit" value="Update">
+	</form>
+	</div>
+</body>
+</html>

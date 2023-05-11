@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gym Management System</title>
+	<style>
+		body {
+			background-color: #D3D3D3;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.heading {
+			font-size: 32px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		.options {
+			list-style-type: none;
+			padding: 0;
+			margin-top: 40px;
+		}
+
+		.options li {
+			margin-bottom: 15px;
+		}
+
+		.options li a {
+			display: block;
+			background-color: #fff;
+			border-radius: 5px;
+			padding: 10px;
+			text-decoration: none;
+			color: #000;
+			font-weight: bold;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+			transition: background-color 0.3s ease;
+		}
+
+		.options li a:hover {
+			background-color: #eee;
+		}
+
+		.gym-logo {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			max-width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="gym-image.png" alt="Gym Logo" class="gym-logo">
+		<h1 class="heading">Gym Management System</h1>
+		<div>
+			<h2>Delete Data</h2>
+			<ul class="options">
+				<li><a href="http://localhost/dbms_project/Delete/delete_members.html">Member</a></li>
+				<li><a href="http://localhost/dbms_project/Delete/delete_equipment.html">Equipment</a></li>
+				<li><a href="http://localhost/dbms_project/Delete/delete_maintenance.html">Maintenance</a></li>
+				<li><a href="http://localhost/dbms_project/Delete/delete_instructor.html">Instructor</a></li>
+				<li><a href="http://localhost/dbms_project/Delete/delete_class.html">Class</a></li>
+				<li><a href="http://localhost/dbms_project/Delete/delete_attendance.html">Attendance</a></li>
+				<li><a href="http://localhost/dbms_project/Delete/delete_payment.html">Payment</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
